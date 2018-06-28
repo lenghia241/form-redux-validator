@@ -1,0 +1,3 @@
+export const SUBMIT_INFO = "SUBMIT_INFO";
+export const SUBMIT_SKILLS = "SUBMIT_SKILLS";
+export const SUBMIT_PORTFOLIO = "SUBMIT_PORTFOLIO";

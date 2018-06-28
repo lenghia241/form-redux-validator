@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 1rem 15rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #d4dbe3;
+  background-color: #454e57;
+  line-height: 3rem;
+}
+
+hr {
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #1886a9;
+  border-width: 0.15rem;
+}
+
+button:disabled {
+  background-color: white;
+  color: grey;
+}
+
+/* Nav Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul li button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+ul li button:active {
+  transform: translateY(0px);
+}
+
+ul li button {
+  padding: 2rem 2rem;
+  cursor: pointer;
+  width: 13rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  transition: all 0.25s;
+}
+
+/* Custom style */
+
+.formTitle {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+/* personal infomation */
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid grey 1px;
+  padding: 3px 10px;
+  color: #d4dbe3;
+  margin: 4rem 0 0.5rem 0;
+}
+
+div .rightInfo {
+  width: 23%;
+}
+
+div input.detail {
+  width: 23%;
+}
+
+.leftInfo {
+  width: 74%;
+}
+
+/* Skills and Location */
+
+/* radio button style */
+.radioButton {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem 7rem;
+  background-color: transparent;
+  border: 1px solid #d4dbe3;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + .radioButton {
+  background-color: #00b2f4;
+  border: none;
+}
+
+/* checkbox style */
+.workSide {
+  width: 49%;
+}
+
+.flexContainer .workSide label {
+  cursor: pointer;
+}
+
+.checkmark {
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: 1px solid #d4dbe3;
+  margin: 2rem 0;
+}
+
+input[type="checkbox"]:checked + span {
+  background-color: #00b2f4;
+}
+
+/* Text area */
+
+textarea {
+  border: solid grey 1px;
+}
+
+.submitButton {
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1.5rem 5rem;
+  cursor: pointer;
+  background-color: #00b2f4;
+  border: none;
+  font-size: 2rem;
+  color: #d4dbe3;
+  font-weight: bold;
+}
+
+form .invalid {
+  border-color: #ad0d0d;
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin: 5rem;
+  font-size: 2rem;
+}
+
+.err-msg {
+  font-size: 1.3rem;
+  color: #ad0d0d;
+}
+
+.spanInputBox {
+  display: flex;
+  flex-direction: column;
+}
